@@ -4,7 +4,7 @@ export function NewsIndex({ news }) {
     <div>
       <h1>All articles</h1>
       {news.map(article => (
-        <div>
+        <div key={article.id}>
           <h4>{article.title}</h4>
           <p>{article.author}</p>
         </div>
